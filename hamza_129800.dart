@@ -139,7 +139,7 @@ void main() {
 
   // // Question 12
   // print("\n Question no 12 👇\n");
-  // print("\n Enter a number to make a right angle triangle using anasterisk:");
+  // print("\n Enter a number to make a right angle triangle using Numbers:");
   // num heightOfRightAngleTriangleForNumber = num.parse(stdin.readLineSync()!);
   // String rightAngleNumber = "";
   // for (num i = 1; i <= heightOfRightAngleTriangleForNumber; i++) {
@@ -147,30 +147,101 @@ void main() {
   //   print(rightAngleNumber);
   // }
 
-  // // Question 12
-  // print("\n Question no 12 👇\n");
-  // print("\n Enter a number to make a right angle triangle using anasterisk:");
+  // // Question 13
+  // print("\n Question no 13 👇\n");
+  // print("\n Enter a number to make a right angle triangle using Numbers:");
   // num heightOfPyrimid = num.parse(stdin.readLineSync()!);
+  // num printingNumber = 1;
   // for (num i = 1; i <= heightOfPyrimid; i++) {
-  //   String angleNumber = "";
-  //   for (num j = 0; j < i; j++) {
-  //     angleNumber += i.toString();
+  //   for (num j = 1; j <= i; j++) {
+  //     stdout.write(i.toString());
+  //     printingNumber++;
   //   }
-  //   print(angleNumber);
+  //   print('');
   // }
 
-  // Question 12
-  print("\n Question no 12 👇\n");
-  print("\n Enter a number to make a right angle triangle using anasterisk:");
-  // num heightOfPyrimid = num.parse(stdin.readLineSync()!);
-  num heightOfPyrimid = 4;
-  num printingNumber = 1;
-  for (num i = 1; i <= heightOfPyrimid; i++) {
-    for (num j = 1; j <= i; j++) {
-      String answer = "$printingNumber ";
-      print(answer);
-      printingNumber++;
+  // // Question 14
+  // print("\n Question no 14 👇\n");
+  // print("\n Enter a number to make a right angle triangle using number:");
+  // num startPoint = num.parse(stdin.readLineSync()!);
+  // num printingNumber = 1;
+  // for (num i = 1; i <= startPoint; i++) {
+  //   for (num j = 1; j <= i; j++) {
+  //     String answer = "$printingNumber ";
+  //     stdout.write(answer);
+  //     printingNumber++;
+  //   }
+  //   print('');
+  // }
+
+  // // Question 15
+  // print("\n Question no 15 👇\n");
+  // print("\n Enter a number to make a triangle using number:");
+  // num startPoint1 = num.parse(stdin.readLineSync()!);
+  // num spaceBetween = 1;
+  // for (num i = 1; i <= startPoint1; i++) {
+  //   // printing the space for triangle
+  //   for (num j = 1; j <= startPoint1 - i; j++) {
+  //     stdout.write(' ');
+  //   }
+
+  //   // now to print the numbers
+  //   for (num k = 1; k <= i; k++) {
+  //     stdout.write(spaceBetween.toString() + " ");
+  //     spaceBetween++;
+  //   }
+  //   print(' ');
+  // }
+
+  // // Question 15
+  // print("\n Question no 15 👇\n");
+  // print("\n Enter a number to make a triangle using Astrisk:");
+  // num startPoint1 = num.parse(stdin.readLineSync()!);
+  // String spaceBetween = "*";
+  // for (num i = 1; i <= startPoint1; i++) {
+  //   // printing the space for triangle
+  //   for (num j = 1; j <= startPoint1 - i; j++) {
+  //     stdout.write(' ');
+  //   }
+
+  //   // now to print the numbers
+  //   for (num k = 1; k <= i; k++) {
+  //     spaceBetween = spaceBetween;
+  //     stdout.write(spaceBetween.toString() + " ");
+  //   }
+  //   print(' ');
+  // }
+
+  // Question 16
+  print("\n Question no 16 👇\n");
+  print("\n Enter Email");
+  String emailAddress = stdin.readLineSync()!;
+
+  print("\n Enter Password");
+  String Password = stdin.readLineSync()!;
+
+  List<Map> sampleData = [
+    {"emailAddress": "hamza@example.com", "Password": "hamza123"},
+    {"emailAddress": "ahsan@example.com", "Password": "ahsan123"},
+    {"emailAddress": "abdullah@example.com", "Password": "abdullah123"},
+    {"emailAddress": "faiz@example.com", "Password": "faiz123"},
+  ];
+
+  bool login = false;
+  for (var user in sampleData) {
+    if (user["emailAddress"] == emailAddress && user["Password"] == Password) {
+      login = true;
+      break;
+    } else {
+      login = false;
+      print("trying using sample data");
+      print(user);
     }
-    print('');
+  }
+
+  if (login) {
+    print("login success");
+  } else {
+    print("login failed");
   }
 }
