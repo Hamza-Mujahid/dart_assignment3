@@ -1,6 +1,8 @@
 // Name: Muhammad Hamza
 // Roll No: 129800
+import 'dart:async';
 import 'dart:io';
+import 'dart:math';
 
 void main() {
   // // Question 1
@@ -50,10 +52,9 @@ void main() {
   //   print("$checkNumber is not a prime Number");
   // }
 
-
   // // Question 4
   // print("\n Question no 4 👇\n");
-  // print("\n Enter a number to find the:");
+  // print("\n Enter a number to find the factorial:");
   // num findFactorial = num.parse(stdin.readLineSync()!);;
   // num factorial = 1;
   // // using for loop
@@ -69,7 +70,6 @@ void main() {
   // }
   // print(factorial);
 
-
   // // Question 5
   // print("\n Question no 5 👇\n");
   // print("\n Enter somer number to find there total like 12345 = 15 :");
@@ -81,7 +81,96 @@ void main() {
   // });
   // print(answer);
 
+  // // Question 6
+  // List<num> listOfMixNumbers = [5,51,9,19,1,91,85,1,18,1,21,8,];
+  // num largestNumber = listOfMixNumbers[0];
+  // for(num number in listOfMixNumbers) {
+  //   if (number > largestNumber) {
+  //     largestNumber = number;
+  //   }
+  // }
+  // print("\n Question no 6 👇\n");
+  // print("List of Mix numbers: $listOfMixNumbers");
+  // print("Largest numbers from that list is $largestNumber.");
 
+  // // Question 7
+  // print("\n Question no 7 👇\n");
+  // print("\n What table you wanna print?:");
+  // num tableName = num.parse(stdin.readLineSync()!);
+  // print("\n Enter Table Limit:");
+  // num tableLimit = num.parse(stdin.readLineSync()!);;
 
+  // for (var i = 1; i <= tableLimit; i++) {
+  //   print("$tableName X $i = ${tableName*i}");
+  // }
 
+  // pdf does not contain question 8
+
+  // // Question 9
+  // print("\n Question no 9 👇\n");
+  // print("\n Enter a word to if it is palindrome or not:");
+  // String someWord = stdin.readLineSync()!;
+  // String wordReversed = someWord.split('').reversed.join();
+  // if (someWord == wordReversed) {
+  //   print("$someWord is palindrome.");
+  // } else {
+  //   print("$someWord is not a palindrome.");
+  // }
+
+  // // Question 10
+  // print("\n Question no 10 👇\n");
+  // print("\n Enter a number to make a cubic table:");
+  // num cubicNumber = num.parse(stdin.readLineSync()!);
+  // List<num> cubicArray = [];
+  // for (num i = 1; i <= cubicNumber; i++) {
+  //   cubicArray.add(i);
+  // }
+  // cubicArray.forEach((n) => print("Number is : $n and cube of the $n is: ${pow(n, 3)}"));
+
+  // // Question 11
+  // print("\n Question no 11 👇\n");
+  // print("\n Enter a number to make a right angle triangle using anasterisk:");
+  // num heightOfRightAngleTriangle = num.parse(stdin.readLineSync()!);
+  // String star = "";
+  // for (num i = 1; i <= heightOfRightAngleTriangle; i++) {
+  //   star += "*";
+  //   print(star);
+  // }
+
+  // // Question 12
+  // print("\n Question no 12 👇\n");
+  // print("\n Enter a number to make a right angle triangle using anasterisk:");
+  // num heightOfRightAngleTriangleForNumber = num.parse(stdin.readLineSync()!);
+  // String rightAngleNumber = "";
+  // for (num i = 1; i <= heightOfRightAngleTriangleForNumber; i++) {
+  //   rightAngleNumber += "$i";
+  //   print(rightAngleNumber);
+  // }
+
+  // // Question 12
+  // print("\n Question no 12 👇\n");
+  // print("\n Enter a number to make a right angle triangle using anasterisk:");
+  // num heightOfPyrimid = num.parse(stdin.readLineSync()!);
+  // for (num i = 1; i <= heightOfPyrimid; i++) {
+  //   String angleNumber = "";
+  //   for (num j = 0; j < i; j++) {
+  //     angleNumber += i.toString();
+  //   }
+  //   print(angleNumber);
+  // }
+
+  // Question 12
+  print("\n Question no 12 👇\n");
+  print("\n Enter a number to make a right angle triangle using anasterisk:");
+  // num heightOfPyrimid = num.parse(stdin.readLineSync()!);
+  num heightOfPyrimid = 4;
+  num printingNumber = 1;
+  for (num i = 1; i <= heightOfPyrimid; i++) {
+    for (num j = 1; j <= i; j++) {
+      String answer = "$printingNumber ";
+      print(answer);
+      printingNumber++;
+    }
+    print('');
+  }
 }
