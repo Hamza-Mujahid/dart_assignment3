@@ -1,6 +1,5 @@
 // Name: Muhammad Hamza
 // Roll No: 129800
-import 'dart:async';
 import 'dart:io';
 import 'dart:math';
 
@@ -32,7 +31,7 @@ void main() {
   // print(fibSequence);
 
   // // Question 3
-  //  print("\n Question no 3 👇\n");
+  // print("\n Question no 3 👇\n");
   // print("\n Enter a number to check if its a prime number or not: ");
   // num checkNumber = num.parse(stdin.readLineSync()!);
 
@@ -55,7 +54,8 @@ void main() {
   // // Question 4
   // print("\n Question no 4 👇\n");
   // print("\n Enter a number to find the factorial:");
-  // num findFactorial = num.parse(stdin.readLineSync()!);;
+  // num findFactorial = num.parse(stdin.readLineSync()!);
+  // ;
   // num factorial = 1;
   // // using for loop
   // // for (num i = 1; i <= findFactorial; i++) {
@@ -76,15 +76,26 @@ void main() {
   // String givenNumber = stdin.readLineSync()!;
   // num answer = 0;
   // List<String> numbersList = givenNumber.split('');
-  // numbersList.forEach((n) => {
-  //   answer += int.parse(n)
-  // });
+  // numbersList.forEach((n) => answer += int.parse(n));
   // print(answer);
 
   // // Question 6
-  // List<num> listOfMixNumbers = [5,51,9,19,1,91,85,1,18,1,21,8,];
+  // List<num> listOfMixNumbers = [
+  //   5,
+  //   51,
+  //   9,
+  //   19,
+  //   1,
+  //   91,
+  //   85,
+  //   1,
+  //   18,
+  //   1,
+  //   21,
+  //   8,
+  // ];
   // num largestNumber = listOfMixNumbers[0];
-  // for(num number in listOfMixNumbers) {
+  // for (num number in listOfMixNumbers) {
   //   if (number > largestNumber) {
   //     largestNumber = number;
   //   }
@@ -98,13 +109,14 @@ void main() {
   // print("\n What table you wanna print?:");
   // num tableName = num.parse(stdin.readLineSync()!);
   // print("\n Enter Table Limit:");
-  // num tableLimit = num.parse(stdin.readLineSync()!);;
+  // num tableLimit = num.parse(stdin.readLineSync()!);
+  // ;
 
   // for (var i = 1; i <= tableLimit; i++) {
-  //   print("$tableName X $i = ${tableName*i}");
+  //   print("$tableName X $i = ${tableName * i}");
   // }
 
-  // pdf does not contain question 8
+  // // pdf does not contain question 8
 
   // // Question 9
   // print("\n Question no 9 👇\n");
@@ -125,7 +137,8 @@ void main() {
   // for (num i = 1; i <= cubicNumber; i++) {
   //   cubicArray.add(i);
   // }
-  // cubicArray.forEach((n) => print("Number is : $n and cube of the $n is: ${pow(n, 3)}"));
+  // cubicArray.forEach(
+  //     (n) => print("Number is : $n and cube of the $n is: ${pow(n, 3)}"));
 
   // // Question 11
   // print("\n Question no 11 👇\n");
@@ -164,12 +177,12 @@ void main() {
   // print("\n Question no 14 👇\n");
   // print("\n Enter a number to make a right angle triangle using number:");
   // num startPoint = num.parse(stdin.readLineSync()!);
-  // num printingNumber = 1;
+  // num printingNumber1 = 1;
   // for (num i = 1; i <= startPoint; i++) {
   //   for (num j = 1; j <= i; j++) {
-  //     String answer = "$printingNumber ";
+  //     String answer = "$printingNumber1 ";
   //     stdout.write(answer);
-  //     printingNumber++;
+  //     printingNumber1++;
   //   }
   //   print('');
   // }
@@ -193,32 +206,32 @@ void main() {
   //   print(' ');
   // }
 
-  // // Question 15
-  // print("\n Question no 15 👇\n");
+  // // Question 16
+  // print("\n Question no 16 👇\n");
   // print("\n Enter a number to make a triangle using Astrisk:");
-  // num startPoint1 = num.parse(stdin.readLineSync()!);
-  // String spaceBetween = "*";
-  // for (num i = 1; i <= startPoint1; i++) {
+  // num startPoint2 = num.parse(stdin.readLineSync()!);
+  // String spaceBetween1 = "*";
+  // for (num i = 1; i <= startPoint2; i++) {
   //   // printing the space for triangle
-  //   for (num j = 1; j <= startPoint1 - i; j++) {
+  //   for (num j = 1; j <= startPoint2 - i; j++) {
   //     stdout.write(' ');
   //   }
 
   //   // now to print the numbers
   //   for (num k = 1; k <= i; k++) {
-  //     spaceBetween = spaceBetween;
-  //     stdout.write(spaceBetween.toString() + " ");
+  //     spaceBetween1 = spaceBetween1;
+  //     stdout.write(spaceBetween1.toString() + " ");
   //   }
   //   print(' ');
   // }
 
-  // Question 16
-  print("\n Question no 16 👇\n");
-  print("\n Enter Email");
-  String emailAddress = stdin.readLineSync()!;
+  // // Question 17
+  // print("\n Question no 17 👇\n");
+  // print("\n Enter Email");
+  // String emailAddress = stdin.readLineSync()!;
 
-  print("\n Enter Password");
-  String Password = stdin.readLineSync()!;
+  // print("\n Enter Password");
+  // String Password = stdin.readLineSync()!;
 
   List<Map> sampleData = [
     {"emailAddress": "hamza@example.com", "Password": "hamza123"},
@@ -227,21 +240,66 @@ void main() {
     {"emailAddress": "faiz@example.com", "Password": "faiz123"},
   ];
 
-  bool login = false;
-  for (var user in sampleData) {
-    if (user["emailAddress"] == emailAddress && user["Password"] == Password) {
-      login = true;
-      break;
-    } else {
-      login = false;
-      print("trying using sample data");
-      print(user);
-    }
-  }
+  // bool login = false;
+  // for (var user in sampleData) {
+  //   if (user["emailAddress"] == emailAddress && user["Password"] == Password) {
+  //     login = true;
+  //     break;
+  //   } else {
+  //     login = false;
+  //     print("trying using sample data");
+  //     print(user);
+  //   }
+  // }
 
-  if (login) {
-    print("login success");
-  } else {
-    print("login failed");
+  // if (login) {
+  //   print("login success");
+  // } else {
+  //   print("login failed");
+  // }
+
+  // // Question 18
+  // print("\n Question no 18 👇\n");
+
+  // bool isLoggedIn = false;
+  // while (!isLoggedIn) {
+  //   print("\n Enter Email");
+  //   String emailAddress = stdin.readLineSync()!;
+
+  //   print("\n Enter Password");
+  //   String Password = stdin.readLineSync()!;
+
+  //   for (Map user in sampleData) {
+  //     if (user["emailAddress"] == emailAddress &&
+  //         user["Password"] == Password) {
+  //       isLoggedIn = true;
+  //       break;
+  //     }
+  //   }
+
+  //   if (isLoggedIn) {
+  //     print("Login successful");
+  //   } else {
+  //     print("login failed");
+  //   }
+  // }
+
+  // String inputList = [stdin.readLineSync()!];
+  
+  String inputList = "5,6,91,618,,9,31,81,7";
+  List<String> numberLisr = [inputList];
+
+  List<num> toNumberedList = [];
+  for (var n in numberLisr) {
+    num number = num.parse(n);
+    toNumberedList.add(number);
   }
+  toNumberedList.sort();
+  print(toNumberedList.last);
+
+
+
+
+
+
 }
